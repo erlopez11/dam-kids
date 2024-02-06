@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    /* Colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #df3045;
+    --color-blue: #009cb1;
+    --color-green: #adbf24;
+    --color-purple: #541e57;
+    --color-brown-dark: #ba9779;
+    --color-brown-light: #deb693;
+
+    /* Fonts */
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Anton', sans-serif;
+    --ff-heading: (var(--ff-secondary));
+    --ff-body: (var(--ff-primary));
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+}
+
+/* Reset/ Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--ff-primary); 
+    font-size: 100%;
+}
+
+/* Navigation */
+header {
+    background-color: var(--color-purple);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 90px;
+    height: auto;
+}
+.primary-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 20px;
+}
+.sketchbook-group {
+    display: flex;
+    align-items: center;
+}
+.sketchbook-icon {
+    width: 44px;
+    height: auto;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+.nav-link p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Homepage Text Section */
+section {
+    padding-inline: 40px;
+    padding-block: 20px;
+}
+h1 {
+    font-family: var(--ff-secondary);
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+h2 {
+    font-size: 28px;
+    font-weight: var(--fw-light);
+    letter-spacing: 3px;
+}
+
+.dividers-green {
+    background-color: var(--color-green);
+}
+.greenDivider1 {
+    width: 205px;
+    height: 16px;
+    margin-block: 10px;
+}
+.floor-sm {
+   
+    background-color: var(--color-brown-dark);
+    width: 100%;
+    height: 11px;
+}
+.floor-lg {
+    background-color: var(--color-brown-light);
+    width: 100%;
+    height: 46px;
+}
+/* Image */
+.home-image {
+    width: 290px;
+    height: auto;
+}
+.home-text {
+    font-size: 12px;
+    
+}
