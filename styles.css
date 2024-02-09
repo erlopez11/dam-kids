@@ -117,6 +117,7 @@ h2 {
 .home-text {
     margin-top: 20px;
     font-size: 16px;
+    font-weight: var(--fw-semibold);
 }
 
 /* Home Image */
@@ -146,4 +147,95 @@ h2 {
 }
 .floor-background {
     position: relative;
+    bordeR: 1px solid red;
+}
+
+
+/* Media Queries */
+
+/* Tablet SM*/
+@media (min-width: 40em) and (max-width: 56em) {
+    .container {
+        --container-padding: 4em;
+     }
+     section {
+        margin-block: 50px;
+    }
+    header {
+        height: 90px;
+    }
+    .logo {
+        width: 90px;
+    }
+    .sketchbook-icon {
+        width: 80px;
+    }
+    h1 {
+        font-size: 58px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .home-image {
+        width: 550px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .img_center {
+        display: flex;
+        justify-content: center;
+    }
+    .start-btn {
+        font-size: 24px;
+        width: 200px;
+        height: 60px;
+    }
+    .floor-lg {
+        height: 100px;
+    }
+}
+/* Tablet LG */
+@media (min-width: 56em) and (max-width:65em) {
+    .container {
+        --container-padding: 5.5em;
+     }
+     section {
+        margin-block: 50px;
+    }
+    header {
+        height: 110px;
+    }
+    .logo {
+        width: 110px;
+    }
+    .sketchbook-icon {
+        width: 90px;
+    }
+    h1 {
+        font-size: 62px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .home-text {
+        font-size: 20px;
+        font-weight: var(--fw-semibold);
+    }
+    .home-image {
+        width: 650px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .img_center {
+        display: flex;
+        justify-content: center;
+    }
+    .start-btn {
+        font-size: 26px;
+        width: 220px;
+        height: 80px;
+    }
+    .floor-lg {
+        height: 80%;
+    }
 }
